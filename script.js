@@ -1,9 +1,29 @@
-var body = document.querySelectorAll("body");
-var cardDisplay = document.querySelector("#cardDisplay");
-var reset = document.querySelector("reser");
+var cardOne = document.querySelector(".card-one");
+var cardTwo = document.querySelector(".card-two");
+var cardThree = document.querySelector(".card-three");
+var cardFour = document.querySelector(".card-four");
+var cardFive = document.querySelector(".card-five");
+var body = document.querySelector(".background-body");
+var defaultBtn = document.querySelector("button")
 
-var defaultBackground = white;
-var textColor = black;
+cardOne.addEventListener("click", function () {
+    body.style.backgroundColor = "cornflowerblue";
+})
+cardTwo.addEventListener("click", function () {
+    body.style.backgroundColor = "pink";
+})
+cardThree.addEventListener("click", function () {
+    body.style.backgroundColor = "darkorchid";
+})
+cardFour.addEventListener("click", function () {
+    body.style.backgroundColor = "rgb(141, 47, 97)";
+})
+cardFive.addEventListener("click", function () {
+    body.style.backgroundColor = "rgb(12, 12, 55)";
+})
 
-card1.addEventListener("click", changeColorFunction );
-mainSeletor.style.defaultBackgroundColor = "purple"
+defaultBtn.addEventListener("click", btn);
+
+function btn(){
+    body.style.backgroundColor = "rgb(118, 142, 162)"
+}
